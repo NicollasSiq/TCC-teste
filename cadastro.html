@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Conta - Aluguel de Roupas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="Imagens/favicon.jpeg" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <h2>Criar Conta</h2>
+        <form action="PHP/cadastro.php" method="post">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required autocomplete="name" aria-label="Nome Completo">
+
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" required autocomplete="username" aria-label="Usuário">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" minlength="6" required autocomplete="new-password" aria-label="Senha">
+
+            <label for="confirmar_senha">Confirmar Senha</label>
+            <input type="password" id="confirmar_senha" name="confirmar_senha" minlength="6" required autocomplete="new-password" aria-label="Confirmar Senha">
+
+            <button type="submit">Criar Conta</button>
+        </form>
+        <div class="login-link">
+            Já tem uma conta? <a href="index.html">Entrar</a>
+        </div>
+    </div>
+</body>
+</html>
